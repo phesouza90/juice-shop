@@ -37,8 +37,8 @@ jobs:
 
   hello-world-windows:
       runs-on: windows-latest
+      needs: hello-world-ubuntu
       
       steps: 
-      
       - name: Print hello world
         run: echo "Hello world Windows"
